@@ -222,20 +222,17 @@ a:active {
 
 .grid__item:last-child {
   -ms-grid-column: 3;
-<<<<<<< Updated upstream
   grid-column: 0;
-=======
+
   grid-column: auto;
->>>>>>> Stashed changes
+
   grid-column-start: 3;
   -ms-grid-column-span: 0;
   grid-column-end: 3;
   -ms-grid-row: 1;
-<<<<<<< Updated upstream
+
   grid-row: 0;
-=======
-  grid-row:auto ;
->>>>>>> Stashed changes
+  grid-row: auto;
   grid-row-start: 1;
   -ms-grid-row-span: 2;
   grid-row-end: 3;
@@ -516,8 +513,4 @@ a:active {
   -webkit-animation: 25s cloud-move-reverse infinite alternate linear;
   animation: 25s cloud-move-reverse infinite alternate linear;
 }
-<<<<<<< Updated upstream
-   
-=======
->>>>>>> Stashed changes
    
