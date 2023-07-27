@@ -87,7 +87,7 @@ a:active {
   border-radius: 30px;
 
   position: relative;
-  background-color: #2FBCF7;
+  background-color: #2fbcf7;
 }
 
 .intro {
@@ -132,6 +132,15 @@ a:active {
   color: white;
 }
 
+.background {
+  margin-top: 125px;
+  border: 3px solid rgba(236, 243, 240, 0.364);
+  border-radius: 30px;
+
+  position: relative;
+  background-color: #2fbcf7;
+}
+
 p {
   color: white;
   font-size: 20px;
@@ -143,7 +152,7 @@ li {
 }
 
 .Your__Project {
-  font-size: 30px;
+  font-size: 50px;
   color: white;
   cursor: pointer;
 }
@@ -165,7 +174,7 @@ li {
   margin-inline-start: 20px;
   -webkit-margin-end: 20px;
   margin-inline-end: 20px;
-  background-color: black;
+  background-color: #a6a6a6;
   padding: 15px;
   border-radius: 10px;
   cursor: pointer;
@@ -303,9 +312,13 @@ li {
 }
 
 .pokemon_link {
-  font-size: 20px;
-  font-family: sans-serif;
-  color: white;
+  padding: 15px;
+  border-radius: 100%;
+  background: gold;
+  color: #fff;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
 .content {
@@ -331,4 +344,10 @@ li {
 
 .input {
   font-size: 20px;
+}
+
+a {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: white;
 }
