@@ -176,8 +176,9 @@ li {
   margin-inline-end: 20px;
   background-color: #a6a6a6;
   padding: 15px;
+  padding-bottom: 50px;
   border-radius: 10px;
-  cursor: pointer;
+  
 }
 
 .grid__item:last-child {
@@ -314,11 +315,13 @@ li {
 .pokemon_link {
   padding: 15px;
   border-radius: 100%;
-  background: gold;
-  color: #fff;
+  font-style: bold;
+  font-weight: 50rem;
+  color: gold;
   -webkit-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  cursor: pointer;
 }
 
 .content {
@@ -349,5 +352,5 @@ li {
 a {
   font-size: 20px;
   font-family: sans-serif;
-  color: white;
+  color: gold;
 }
