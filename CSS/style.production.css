@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   background-color: #0583f2;
   margin: 0;
   padding: 0;
@@ -98,7 +98,7 @@ a:active {
 
 .work {
   font-size: 50px;
-  color:#666666;
+  color: #666666;
 }
 
 .background {
@@ -107,19 +107,19 @@ a:active {
 }
 
 p {
-  color:#666666;
+  color: #666666;
   font-size: 20px;
 }
 
 li {
-  color: white;
+  color: #666666;
   font-size: 20px;
   text-align: left;
 }
 
 .Your__Project {
   font-size: 50px;
-  color: white;
+  color: #666666;
 }
 
 .grid {
@@ -129,7 +129,6 @@ li {
   -ms-grid-columns: 1fr 2px 1fr 2px 1fr;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
-  font-size: 15px;
 }
 
 .grid__item {
@@ -137,7 +136,7 @@ li {
   margin-inline-start: 20px;
   -webkit-margin-end: 20px;
   margin-inline-end: 20px;
-  background-color:#f7f7f7;
+  background-color: #f7f7f7;
   padding: 15px;
   border-radius: 10px;
 }
@@ -146,7 +145,8 @@ li {
   display: -ms-grid;
   display: grid;
   text-align: center;
-  color: white;
+  line-height: 40px;
+  color: #666666;
   font-size: 20px;
 }
 
@@ -155,9 +155,7 @@ li {
   width: 75rem;
   border-radius: 500px;
   margin: 0px auto;
-  border: 3px solid rgba(219, 243, 233, 0.364);
-  background-color: #2fbcf7;
-  border-radius: 30px;
+  color: #666666;
   padding: 10px;
   position: relative;
   border-width: 30%;
@@ -236,7 +234,7 @@ li {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the button */
-  background-color: #348abf;
+  background-color: #2fbcf7;
   color: white;
   text-decoration: none;
   /* width of the border, type, color */
@@ -266,7 +264,7 @@ li {
   border-radius: 100%;
   font-style: bold;
   font-weight: 50rem;
-  color: gold;
+  color: #0583f2;
   -webkit-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -300,13 +298,13 @@ li {
   width: device-width;
 }
 
-.input {
+input {
   font-size: 20px;
 }
 
 a {
   font-family: sans-serif;
-  color:#0583f2;
+  color: #0583f2;
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
