@@ -1,24 +1,19 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
-
   background-color: #0583f2;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-  color: white;
+  color: #0583f2;
   text-align: center;
   font-size: 100px;
   font-weight: 500;
   margin-bottom: -10px;
+  font-family: "League Spartan";
 }
 
 h2 {
@@ -27,23 +22,6 @@ h2 {
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
-}
-
-a:visited {
-  /*visited link */
-  /*color: rgb(72, 130, 130);*/
-}
-
-button {
-  cursor: pointer;
-  font-size: 20px;
-  opacity: 0.8;
-  background-color: #45b3bf;
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
@@ -84,9 +62,7 @@ a:active {
 .profile {
   margin-top: 125px;
   border: 3px solid rgba(236, 243, 240, 0.364);
-  border-radius: 30px;
-
-  position: relative;
+  width: 100%;
   background-color: #2fbcf7;
 }
 
@@ -112,19 +88,12 @@ a:active {
   font-size: 25px;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  color: gold;
+  color: #aed7fc;
 }
 
 .navigation-list li {
   display: inline;
   margin-left: 20px;
-}
-
-.content {
-  margin-top: 50px;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
 }
 
 .work {
@@ -134,11 +103,7 @@ a:active {
 
 .background {
   margin-top: 125px;
-  border: 3px solid rgba(236, 243, 240, 0.364);
-  border-radius: 30px;
-
-  position: relative;
-  background-color: #2fbcf7;
+  background-color: #f7f7f7;
 }
 
 p {
@@ -149,61 +114,39 @@ p {
 li {
   color: white;
   font-size: 20px;
+  text-align: left;
 }
 
 .Your__Project {
   font-size: 50px;
   color: white;
-  cursor: pointer;
 }
 
 .grid {
   display: -ms-grid;
   display: grid;
-  grid-gap: 20px;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  -ms-grid-columns: 1fr 2px 1fr 2px 1fr;
+  grid-template-columns: repeat(3, 1fr);
   text-align: center;
   font-size: 15px;
-  cursor: pointer;
 }
 
 .grid__item {
-  margin-top: 100px;
   -webkit-margin-start: 20px;
   margin-inline-start: 20px;
   -webkit-margin-end: 20px;
   margin-inline-end: 20px;
   background-color: #a6a6a6;
   padding: 15px;
-  padding-bottom: 50px;
   border-radius: 10px;
-  
-}
-
-.grid__item:last-child {
-  -ms-grid-column: 3;
-  grid-column: 0;
-
-  grid-column: auto;
-
-  grid-column-start: 3;
-  -ms-grid-column-span: 0;
-  grid-column-end: 3;
-  -ms-grid-row: 1;
-
-  grid-row: 0;
-  grid-row: auto;
-  grid-row-start: 1;
-  -ms-grid-row-span: 2;
-  grid-row-end: 3;
 }
 
 .standard-label {
   display: -ms-grid;
   display: grid;
   text-align: center;
-  color: whitesmoke;
+  color: white;
   font-size: 20px;
 }
 
@@ -213,7 +156,7 @@ li {
   border-radius: 500px;
   margin: 0px auto;
   border: 3px solid rgba(219, 243, 233, 0.364);
-  background-color: #0d0d0d;
+  background-color: #2fbcf7;
   border-radius: 30px;
   padding: 10px;
   position: relative;
@@ -228,8 +171,13 @@ li {
 
 .button_2 {
   margin: 0;
-  background-color: gold;
+  padding: 10px;
+  background-color: #666666;
   position: relative;
+  font-weight: 10rem;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
   top: 10px;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
@@ -280,15 +228,17 @@ li {
 }
 
 .buttoncv {
-  border: none;
+  display: grid;
+  justify-content: center;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   padding: 10px;
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the button */
-  background-color: gold;
+  background-color: #348abf;
   color: white;
   text-decoration: none;
-  border-radius: 100px;
   /* width of the border, type, color */
   font-size: 30px;
   -webkit-transition-duration: 0.2s;
@@ -297,7 +247,6 @@ li {
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
-  margin-left: 45%;
 }
 
 .buttoncv:hover {
@@ -326,15 +275,22 @@ li {
 
 .content {
   display: -webkit-box;
+  text-indent: 5%;
   display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  width: 50%;
+  display: inline-flexbox;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-left: 25%;
+  margin-top: 5px;
+  color: #666666;
+  font-family: "League Spartan";
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 @viewport {
@@ -353,4 +309,5 @@ a {
   font-size: 20px;
   font-family: sans-serif;
   color: gold;
+  cursor: pointer;
 }
