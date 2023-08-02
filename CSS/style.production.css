@@ -98,7 +98,7 @@ a:active {
 
 .work {
   font-size: 50px;
-  color: white;
+  color:#666666;
 }
 
 .background {
@@ -107,7 +107,7 @@ a:active {
 }
 
 p {
-  color: white;
+  color:#666666;
   font-size: 20px;
 }
 
@@ -137,7 +137,7 @@ li {
   margin-inline-start: 20px;
   -webkit-margin-end: 20px;
   margin-inline-end: 20px;
-  background-color: #a6a6a6;
+  background-color:#f7f7f7;
   padding: 15px;
   border-radius: 10px;
 }
@@ -275,7 +275,6 @@ li {
 
 .content {
   display: -webkit-box;
-  text-indent: 5%;
   display: -ms-flexbox;
   display: inline-flexbox;
   max-width: 600px;
@@ -288,8 +287,8 @@ li {
   margin-top: 5px;
   color: #666666;
   font-family: "League Spartan";
-  font-size: 20px;
-  text-align: center;
+  font-size: 18px;
+  text-align: left;
   margin-bottom: 20px;
 }
 
@@ -306,8 +305,9 @@ li {
 }
 
 a {
-  font-size: 20px;
   font-family: sans-serif;
-  color: gold;
+  color:#0583f2;
+  font-weight: bold;
   cursor: pointer;
+  text-decoration: none;
 }
