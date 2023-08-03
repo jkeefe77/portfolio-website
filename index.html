@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="description" content="James Keefe's home page.">
+    <meta name="description" content="James Keefe's home page." />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA Compatible" content="ie=edge" />
@@ -10,6 +10,13 @@
       type="text/css"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,32 +28,41 @@
     <title>James Keefe</title>
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-navigation page header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a
-              href="index.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >Home</a
-            >
-          </li>
-          <li role="presentation"></li>
-          <a href="about.html" role="menuitem" class="navigation-list__item"
-            >About me</a
-          >
-          <li role="presentation">
-            <a href="work.html" role="menutitem" class="navigation-list__item"
-              >Work</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="contact.html" class="navigation-list__item">Contact</a>
-          </li>
-        </ul>
+    <container>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+        <a class="navbar-brand" href="index.html">JK</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <!--  nav links -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" aria-label="About Me Page"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="work.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-    </header>
+    </container>
     <main>
       <div class="profile">
         <h1>
@@ -71,22 +87,41 @@
       </div>
     </main>
     <footer class="page-footer">
-      <p>Find me on</p>
+      <p class="white-links">Find me on</p>
       <div class="social-media">
         <!-- Github logo -->
         <a target="_blank" href="https://www.github.com"
-          ><img src="img/github.svg" alt="github"
+          ><img src="img/github.svg" class="social" aria-label="Github link"
         /></a>
         <!-- Twitter logo -->
-        <a target="_blank" href="https://www.twitter.com"
-          ><img src="img/twitter.svg" alt="twitter"
+        <a
+          target="_blank"
+          href="https://www.twitter.com"
+          aria-label="Twitter Link"
+          ><img src="img/twitter.svg" class="social" aria-label="Twitter link"
         /></a>
         <!-- LinkedIn logo -->
-        <a target="_blank" href="https://www.linkedin.com"
-          ><img src="img/linkedin.svg" alt="linkedin"
+        <a
+          target="_blank"
+          href="https://www.linkedin.com"
+          aria-label="LinkedIn Link"
+          ><img
+            src="img/linkedin.svg"
+            class="social"
+            aria-label="LinkedIn link"
         /></a>
       </div>
     </footer>
-    <script src="javascript/tota11y.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="javascript/tota11y.min.js"></script> -->
   </body>
 </html>

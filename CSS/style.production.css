@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   background-color: #0583f2;
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ body {
 h1 {
   color: #0583f2;
   text-align: center;
-  font-size: 100px;
+  font-size: 6rem;
   font-weight: 500;
   margin-bottom: -10px;
   font-family: "League Spartan";
@@ -19,20 +19,24 @@ h1 {
 h2 {
   color: white;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 500;
   font-style: normal;
 }
 
-button:hover {
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
+button:hover,
+.button_2:hover,
+.pokemon_link:hover {
+  transition: opacity 0.2s ease;
+  opacity: 1;
+}
+.buttoncv {
+  transition: background-color 0.2s, color 0.2, opacity 0.2s ease;
+}
+
+.buttoncv:hover {
   background-color: white;
-  color: #45b3bf;
+  color: black;
 }
 
 a:active {
@@ -41,95 +45,124 @@ a:active {
 }
 
 .profile_portrait {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
   border-radius: 50%;
 }
 
 .page-footer {
   color: white;
-  clear: both;
-  display: -ms-grid;
-  display: grid;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.white-links {
+  color: #ffffff;
+}
+
+.profile {
+  margin-top: 50px;
+  border: 3px solid rgba(236, 243, 240, 0.364);
+  background-color: white;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: inline-flexbox;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  text-align: center;
-  position: relative;
-  margin-top: 100px;
-}
-
-.profile {
-  margin-top: 125px;
-  border: 3px solid rgba(236, 243, 240, 0.364);
-  width: 100%;
-  background-color: #2fbcf7;
-}
-
-.intro {
-  font-size: 25px;
-  font-family: sans-serif;
-}
-
-.main-navigation .page-header__item {
-  text-align: right;
-  text-decoration: none;
+  margin-top: 5px;
+  color: #666666;
+  font-family: "League Spartan";
+  font-size: 24px;
+  font-weight: 20rem;
+  text-align: left;
+  margin-bottom: 20px;
+  line-height: 30px;
 }
 
 .navigation-list {
   list-style-type: none;
-  display: inline;
-  position: absolute;
-  top: 10px;
-  right: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
-.navigation-list__item {
-  font-size: 25px;
-  text-decoration: none;
+.nav-link {
+  font-size: 20px;
+  line-height: 10px;
+  margin-left: 30px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #aed7fc;
-}
-
-.navigation-list li {
-  display: inline;
-  margin-left: 20px;
+  color: white;
 }
 
 .work {
   font-size: 50px;
-  color: white;
+  color: #666666;
 }
 
 .background {
   margin-top: 125px;
   background-color: #f7f7f7;
+  background-size: cover;
 }
 
 p {
-  color: white;
+  color: #666666;
   font-size: 20px;
 }
 
-li {
+.nav-item {
   color: white;
   font-size: 20px;
+  list-style: none;
+}
+
+li {
   text-align: left;
+}
+
+.navbar-brand {
+  border-radius: 50px;
+  background-color: #f28c06;
+  display: inline-block;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 2rem;
+  width: 70px;
+  height: 70px;
+  margin-left: 10px;
+}
+
+.navbar-light .navbar-brand {
+  color: white;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+.navbar-light .navbar-toggler {
+  color: white;
 }
 
 .Your__Project {
   font-size: 50px;
-  color: white;
+  color: #666666;
 }
 
 .grid {
-  display: -ms-grid;
   display: grid;
-  grid-gap: 30px;
-  -ms-grid-columns: 1fr 2px 1fr 2px 1fr;
+  grid-gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
-  font-size: 15px;
+  padding: 2rem;
 }
 
 .grid__item {
@@ -137,8 +170,8 @@ li {
   margin-inline-start: 20px;
   -webkit-margin-end: 20px;
   margin-inline-end: 20px;
-  background-color: #a6a6a6;
-  padding: 15px;
+  background-color: #f7f7f7;
+  padding: 1.5rem;
   border-radius: 10px;
 }
 
@@ -146,21 +179,19 @@ li {
   display: -ms-grid;
   display: grid;
   text-align: center;
-  color: white;
+  line-height: 40px;
+  color: #666666;
   font-size: 20px;
 }
 
 .contact-form {
   text-align: center;
-  width: 75rem;
-  border-radius: 500px;
-  margin: 0px auto;
-  border: 3px solid rgba(219, 243, 233, 0.364);
-  background-color: #2fbcf7;
-  border-radius: 30px;
+  max-width: 90%;
+  margin: 0 auto;
+  color: #666666;
   padding: 10px;
   position: relative;
-  border-width: 30%;
+  border-width: 10%;
 }
 
 .text_area {
@@ -169,52 +200,10 @@ li {
   font-size: 20px;
 }
 
-.button_2 {
-  margin: 0;
-  padding: 10px;
-  background-color: #666666;
-  position: relative;
-  font-weight: 10rem;
-  font-size: 20px;
-  color: white;
-  cursor: pointer;
-  top: 10px;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  opacity: 100%;
-  border-radius: 100px;
-}
-
-.button_2:hover {
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-  background-color: white;
-  color: black;
-}
-
-@media all and (max-width: 500px) {
+@media (max-width: 750px) {
   .grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-}
-
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
-    -ms-grid-columns: 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
   }
 
   .grid__item:last-child {
@@ -223,7 +212,13 @@ li {
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -236,7 +231,7 @@ li {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the button */
-  background-color: #348abf;
+  background-color: #f28c06;
   color: white;
   text-decoration: none;
   /* width of the border, type, color */
@@ -256,26 +251,23 @@ li {
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
-  background-color: white;
+  background-color: #f8ab47;
   color: black;
   text-decoration: none;
 }
 
 .pokemon_link {
-  padding: 15px;
-  border-radius: 100%;
-  font-style: bold;
-  font-weight: 50rem;
-  color: gold;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  cursor: pointer;
+  background-color: #f28c06;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
 }
 
 .content {
   display: -webkit-box;
-  text-indent: 5%;
   display: -ms-flexbox;
   display: inline-flexbox;
   max-width: 600px;
@@ -288,8 +280,8 @@ li {
   margin-top: 5px;
   color: #666666;
   font-family: "League Spartan";
-  font-size: 20px;
-  text-align: center;
+  font-size: 18px;
+  text-align: left;
   margin-bottom: 20px;
 }
 
@@ -301,13 +293,40 @@ li {
   width: device-width;
 }
 
-.input {
+input {
   font-size: 20px;
 }
 
 a {
-  font-size: 20px;
   font-family: sans-serif;
-  color: gold;
+  color: #0583f2;
+  font-weight: bold;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.social {
+  padding: 5px;
+  width: 60px;
+  height: 60px;
+}
+
+.bg-custom {
+  background-color: #0583f2;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.work-button {
+  background-color: #f28c06;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
 }
