@@ -49,6 +49,7 @@ a:active {
   max-width: 500px;
   height: auto;
   border-radius: 50%;
+  padding: 20px;
 }
 
 .page-footer {
@@ -351,6 +352,6 @@ a {
   margin-bottom: 10%;
 }
 
-img {
-  box-shadow: 0 0 20px black;
+.work-image {
+  box-shadow: 0 0 10px black;
 }
