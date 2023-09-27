@@ -1,149 +1,226 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta name="description" content="Projects I've worked on.">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA Compatible" content="ie=edge">
-    <link rel="normalizecss" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-     <link
+  <head>
+    <meta name="description" content="Projects I've worked on." />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA Compatible" content="ie=edge" />
+    <link
+      rel="normalizecss"
+      type="text/css"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="CSS/style.production.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="CSS/style.production.css" />
     <link rel="shortcut icon" type="png" href="img/favicon-32x32.png" />
     <title>James Keefe - Portfolio</title>
     <!-- Header including the logo and the main navigation -->
-    </head>
-    <body>
-        <!-- Add Logo here -->
-        <container>
-          <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
-            <a class="navbar-brand" href="index.html">JK</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <!--  nav links -->
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html" aria-label="Home page">Home</a>
-                </li>
-             <li class="nav-item">
-                  <a class="nav-link" href="work.html" aria-label="Work page">Work</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html" aria-label="About Me Page"
-                    >About</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html" aria-label="Contact page">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </container>
-        <br>
-   
-<!-- Main content -->
-    <main>
-        <h1 style="color: white;">Work</h1>
-        <br><br><div class="grid">
-    <div class="grid__item">
-     
-    <a href="https://jkeefe77.github.io/simple-js-app/" class="work">Pokedex App</a>
-        <p class="work_info"> A functioning search application dedicated to Pokemon which displays their physical descriptors and abilities.</p>  
-        <p>
-          <u> Notable features:</u> 
-            <ul> 
-              <li> Loads data from an external API</li>
-              <br>
-          <li>Displays a reactive list of items which fire respective modals when selected</li>
-          <br>
-          <li>Search feature which includes a filter function that removes Pokemon names from search result data based on name input</li>
-       </ul>
-      </p>
-      <button class="work-button">
-    <a class="white-links" href="https://jkeefe77.github.io/simple-js-app/">See project website</a></button> 
-    <br>
-    <button class="code-button">
-      <a class="white-links" href="https://github.com/jkeefe77/simple-js-app">See project on Github</a></button>      
-      <br>
-      <img src="img/pokemon.png" class="work-image" alt="Pokemon home page" style="width: 300px; height: 200px;">
-    </div>
-        <div class="grid__item">
-          
-        <a href="https://myflixcinema.netlify.app/login" class="work">myFlix Application</a>
-        <p>A functioning web app developed with the MERN stack that provides users with information on movies.  Users can register, update their accounts, and create a list of favorite movies.
-        </p>
-        <button class="work-button">
-        <a class="white-links" href="https://myflixcinema.netlify.app/">See project website</a></button> 
-        <br>
-        <button class="code-button">
-          <a class="white-links" href="https://github.com/jkeefe77/myFlix-client">See project on Github</a></button>      
-          <br>
-          <img src="img/home view.png" class="work-image" alt="myFlix home page" style="width: 300px; height: 200px;"> 
-        </div>         
-    <div class="grid__item">
-      <a href="https://jkeefe77.github.io/meet/" class="work">Meet App</a>
-        <p>A progressive web app built with React.  Test-driven using Jest, the backend utilizes AWS Lambda functioning to fetch data from Google Calendar API to display CareerFoundry's global events calendar.
-        </p>
-        <button class="work-button">
-        <a class="white-links" href="https://jkeefe77.github.io/meet/">See project website</a></button>
-        <br>
-        <button class="code-button">
-          <a class="white-links" href="https://github.com/jkeefe77/meet">See project on Github</a></button>      
-          <br>
-          <img src="img/Meet app .png" class="work-image" alt="Meet app home page" style="width: 300px; height: 200px;">
+  </head>
+  <body>
+    <!-- Add Logo here -->
+    <container>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+        <a class="navbar-brand" href="index.html">JK</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <!--  nav links -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" aria-label="Home page"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="work.html" aria-label="Work page"
+                >Work</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" aria-label="About Me Page"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" aria-label="Contact page"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
-    <div class="grid__item">
-        <a href="img/casestudy.pdf" class="work" download>Case Study: myFlix</a>
-        <p>A demonstration in full stack web development.</p>
-        <button class="casestudy-button">
-        <a class ="white-links" href="img/casestudy.pdf" download>See PDF file</a></button> 
-        <br>
-        <img src="img/case study.png" class="work-image" alt="Pokemon home page" style="width: 300px; height: 200px;">
+      </nav>
+    </container>
+    <br />
+
+    <!-- Main content -->
+    <main>
+      <h1 style="color: white">Work</h1>
+      <br /><br />
+      <div class="grid">
+        <div class="grid__item">
+          <a href="https://jkeefe77.github.io/simple-js-app/" class="work"
+            >Pokedex App</a
+          >
+          <p class="work_info">
+            A functioning search application dedicated to Pokemon which displays
+            their physical descriptors and abilities.
+          </p>
+          <button class="work-button">
+            <a
+              class="white-links"
+              href="https://jkeefe77.github.io/simple-js-app/"
+              >See project website</a
+            >
+          </button>
+          <br />
+          <button class="code-button">
+            <a
+              class="white-links"
+              href="https://github.com/jkeefe77/simple-js-app"
+              >See project on Github</a
+            >
+          </button>
+          <br />
+          <img
+            src="img/pokemon.png"
+            class="work-image"
+            alt="Pokemon home page"
+          />
+        </div>
+        <div class="grid__item">
+          <a href="https://myflixcinema.netlify.app/login" class="work"
+            >myFlix Application</a
+          >
+          <p>
+            A functioning web app developed with the MERN stack that provides
+            users with information on movies. Users can register, update their
+            accounts, and create a list of favorite movies.
+          </p>
+          <button class="work-button">
+            <a class="white-links" href="https://myflixcinema.netlify.app/"
+              >See project website</a
+            >
+          </button>
+          <br />
+          <button class="code-button">
+            <a
+              class="white-links"
+              href="https://github.com/jkeefe77/myFlix-client"
+              >See project on Github</a
+            >
+          </button>
+          <br />
+          <img
+            src="img/home view.png"
+            class="work-image"
+            alt="myFlix home page"
+          />
+        </div>
+        <div class="grid__item">
+          <a href="https://jkeefe77.github.io/meet/" class="work">Meet App</a>
+          <p>
+            A progressive web app built with React. Test-driven using Jest, the
+            backend utilizes AWS Lambda functioning to fetch data from Google
+            Calendar API to display CareerFoundry's global events calendar.
+          </p>
+          <button class="work-button">
+            <a class="white-links" href="https://jkeefe77.github.io/meet/"
+              >See project website</a
+            >
+          </button>
+          <br />
+          <button class="code-button">
+            <a class="white-links" href="https://github.com/jkeefe77/meet"
+              >See project on Github</a
+            >
+          </button>
+          <br />
+          <img
+            src="img/Meet app .png"
+            class="work-image"
+            alt="Meet app home page"
+          />
+        </div>
+        <div class="grid__item">
+          <a href="img/casestudy.pdf" class="work" download
+            >Case Study: myFlix</a
+          >
+          <p>A demonstration in full stack web development.</p>
+          <button class="casestudy-button">
+            <a class="white-links" href="img/casestudy.pdf" download
+              >See PDF file</a
+            >
+          </button>
+          <br />
+          <img
+            src="img/case study.png"
+            class="work-image"
+            alt="Pokemon home page"
+          />
+        </div>
+        <div class="grid__item">
+          <a class="work">ChatterBox</a>
+          <p>
+            A mobile chat app built with React Native and Android Studio. This
+            app provides users with a customizable chat interface and options to
+            share images and their location with friends.
+          </p>
+          <button class="work-button">
+            <a class="white-links" href="https://www.github.com"
+              >See project on Github</a
+            >
+          </button>
+          <br />
+          <br />
+          <img src="img/chatdemo.png" class="chatimg" alt="Chat Demo image" />
+        </div>
+        <div class="grid__item">
+          <a class="Your__Project">Your project?</a>
+          <br /><br />
+          <img src="img/smileyface.svg" />
+        </div>
       </div>
-    <div class="grid__item">
-        <a class="work">Fitness App</a>
-        <p>In progress...
-        </p>
-        <button class="work-button">
-        <a class="white-links" href="https://www.github.com">See project on Github</a></button> 
-    </div>
-    <div class="grid__item">
-        <a class="Your__Project">Your project?</a>
-        <br><br>
-        <img src="img/smileyface.svg">
-    </div>
-    </div>
-  </main>
+    </main>
 
     <!-- Footer with links to social media profiles -->
     <footer class="page-footer">
-        <p class="white-links">Find me on</p>
-        <div class="social-media">
-            <a target="_blank" href="https://www.github.com"><img src="img/github.svg" class="social" aria-label="Github logo"></a>
-            <a target="_blank" href="https://www.twitter.com"><img src="img/twitter.svg" class="social" aria-label="Twitter logo"></a>
-            <a target="_blank" href="https://www.linkedin.com"><img src="img/linkedin.svg" class="social" aria-label="Linkedin logo"></a>
-        </div>
+      <p class="white-links">Find me on</p>
+      <div class="social-media">
+        <a target="_blank" href="https://www.github.com"
+          ><img src="img/github.svg" class="social" aria-label="Github logo"
+        /></a>
+        <a target="_blank" href="https://www.twitter.com"
+          ><img src="img/twitter.svg" class="social" aria-label="Twitter logo"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com"
+          ><img
+            src="img/linkedin.svg"
+            class="social"
+            aria-label="Linkedin logo"
+        /></a>
+      </div>
     </footer>
-     <script
+    <script
       src="https://code.jquery.com/jquery-1.12.4.min.js"
       integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
       crossorigin="anonymous"
@@ -154,7 +231,5 @@
       crossorigin="anonymous"
     ></script>
     <!-- <script src="javascript/tota11y.min.js"></script> -->
-
-</body>
-
+  </body>
 </html>
