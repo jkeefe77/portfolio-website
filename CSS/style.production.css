@@ -382,7 +382,7 @@ a {
     grid-row: auto / auto;
   }
   .white-links {
-    font-size: 1rem;
+    font-size: 12px;
     font-family: "League Spartan";
   }
   h1 {
@@ -400,6 +400,8 @@ a {
 
   .work {
     font-size: 2rem;
+    font-weight: 500;
+    font-family: "League Spartan";
   }
 
   .buttoncv {
@@ -415,7 +417,7 @@ a {
     color: white;
     text-decoration: none;
     /* width of the border, type, color */
-    font-size: 20px;
+    font-size: 18px;
     -webkit-transition-duration: 0.2s;
     -o-transition-duration: 0.2s;
     transition-duration: 0.2s;
