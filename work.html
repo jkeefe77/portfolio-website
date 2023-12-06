@@ -105,6 +105,7 @@
             src="img/pokemon.png"
             class="work-image"
             alt="Pokemon home page"
+            onclick="openModal('img/pokemon.png')"
           />
         </div>
         <div class="grid__item">
@@ -131,9 +132,10 @@
           </button>
           <br />
           <img
-            src="img/home view.png"
+            src="img/home_view.png"
             class="work-image"
             alt="myFlix home page"
+            onclick="openModal('img/home_view.png')"
           />
         </div>
         <div class="grid__item">
@@ -156,9 +158,10 @@
           </button>
           <br />
           <img
-            src="img/Meet app .png"
+            src="img/meet_app.png"
             class="work-image"
             alt="Meet app home page"
+            onclick="openModal('img/meet_app.png')"
           />
         </div>
         <div class="grid__item">
@@ -173,9 +176,10 @@
           </button>
           <br />
           <img
-            src="img/case study.png"
+            src="img/case_study.png"
             class="work-image"
             alt="Pokemon home page"
+            onclick="openModal('img/case_study.png')"
           />
         </div>
         <div class="grid__item">
@@ -192,7 +196,8 @@
           </button>
           <br />
           <br />
-          <img src="img/chatdemo.png" class="chatimg" alt="Chat Demo image" />
+          <img src="img/chatdemo.png" class="chatimg" alt="Chat Demo image"
+          onclick="openModal('img/chatdemo.png')" />
         </div>
         <div class="grid__item">
           <a class="Your__Project">Your project?</a>
@@ -201,7 +206,35 @@
         </div>
       </div>
     </main>
+    <script>
+      // Function to open the modal
+      function openModal(imageSrc) {
+        // Get the modal element
+        var modal = document.getElementById("myModal");
 
+        // Get the image element inside the modal
+        var modalImg = document.getElementById("modalImage");
+
+        // Set the source of the image in the modal
+        modalImg.src = imageSrc;
+
+        // Display the modal
+        modal.style.display = "block";
+      }
+
+      // Function to close the modal
+      function closeModal() {
+        // Get the modal element
+        var modal = document.getElementById("myModal");
+
+        // Hide the modal
+        modal.style.display = "none";
+      }
+    </script>
+    <div id="myModal" class="modal" onclick="closeModal()">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage" />
+    </div>
     <!-- Footer with links to social media profiles -->
     <footer class="page-footer">
       <p class="white-links">Find me on</p>

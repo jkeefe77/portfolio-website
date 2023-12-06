@@ -86,21 +86,17 @@ a:active {
 
 .intro {
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: inline-flexbox;
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 5px;
   color: #666666;
   font-family: sans-serif;
-  font-size: 24px;
   font-weight: 20rem;
-  text-align: left;
+
   margin-bottom: 20px;
   line-height: 30px;
 }
@@ -154,6 +150,27 @@ li {
   width: 80%;
   border-radius: 50%;
   margin-bottom: 10px;
+  box-shadow: 0 0 10px black;
+  margin-bottom: 10px;
+  width: 80%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.chatimg:hover {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+@media screen and (max-width: 400px) {
+  .chatimg {
+    margin-bottom: 10px;
+    width: 80%;
+    transition: transform 0.3s ease-in-out; /* Adjust padding for smaller screens if needed */
+  }
+  .chatimg:hover {
+    transform: scale(10px);
+    cursor: pointer;
+  }
 }
 
 .navbar-brand {
@@ -188,6 +205,24 @@ li {
   box-shadow: 0 0 10px black;
   margin-bottom: 10px;
   width: 80%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.work-image:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+@media screen and (max-width: 400px) {
+  .work-image {
+    box-shadow: 0 0 10px black;
+    margin-bottom: 10px;
+    width: 80%;
+    transition: transform 0.3s ease-in-out; /* Adjust padding for smaller screens if needed */
+  }
+  .work-image:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
 }
 
 .grid {
@@ -207,6 +242,11 @@ li {
   .grid {
     grid-template-columns: 1fr; /* Change to a single column for small screens */
     padding: 1rem; /* Adjust padding for smaller screens if needed */
+  }
+  .grid__item {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 15px;
   }
 }
 .standard-label {
@@ -336,7 +376,6 @@ a {
 }
 .image-container2 img {
   width: 100%;
-  padding: 20px;
 }
 .casestudy-button {
   background-color: #333333;
@@ -374,10 +413,7 @@ a {
     width: 80%;
     height: auto;
   }
-  .chatimg {
-    width: 80%;
-    height: auto;
-  }
+
   .grid__item {
     width: 100%;
     margin: 0;
@@ -454,5 +490,30 @@ a {
   }
   h1 {
     font-size: 60px;
+  }
+}
+
+.hello-message {
+  color: #0583f2;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "League Spartan";
+  position: relative;
+  transform: translate(0, -50%);
+  white-space: nowrap;
+  display: none; /* Hide the element by default */
+}
+
+@media screen and (max-width: 400px) {
+  .hello-message {
+    font-size: 24px;
+    color: #0583f2;
+    left: 2px;
+    font-weight: 500;
+    font-family: "League Spartan";
+    position: relative;
+    /* transform: translate(0, -50%); */
+    white-space: nowrap;
+    display: none; /* Hide the element by default */
   }
 }

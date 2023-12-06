@@ -72,23 +72,19 @@
             rel="stylesheet"
           />
         </h1>
+
         <h2>
           <img
             src="img/portrait.jpg"
             class="profile_portrait"
             alt="James Keefe Portrait"
           />
+          <div class="hello-message">Welcome to my site!</div>
           <p class="intro">
-            A driven web developer and decorated problem-solver with a
-            background in procurement and public safety.
-            <br />
-            <br />Reliable team player who enjoys delivering innovative
-            solutions in order to meet project goals.
+            I'm a certified full stack web developer looking for new projects
+            and opportunies to display my talents.
             <br />
             <br />
-            Motivated by the opportunity for continuous learning in an
-            ever-evolving field that requires its contributors to exhibit
-            adaptability in order to succeed.
           </p>
         </h2>
       </div>
@@ -117,6 +113,12 @@
       integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(document).ready(function () {
+        $(".hello-message").fadeIn(1000).delay(2000).fadeOut(1000);
+        // Add more animations or interactions as needed
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
