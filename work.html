@@ -196,8 +196,12 @@
           </button>
           <br />
           <br />
-          <img src="img/chatdemo.png" class="chatimg" alt="Chat Demo image"
-          onclick="openModal('img/chatdemo.png')" />
+          <img
+            src="img/chatdemo.png"
+            class="chatimg"
+            alt="Chat Demo image"
+            onclick="openModal('img/screenrecord.webm')"
+          />
         </div>
         <div class="grid__item">
           <a class="Your__Project">Your project?</a>
@@ -205,36 +209,56 @@
           <img src="img/smileyface.svg" />
         </div>
       </div>
+      <div id="myModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <!-- Video element for screenrecord.webm -->
+        <div class="modal-content" id="modalContent"
+        <video id="modalVideo" controls>
+          <source src="" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+        <img class="modal-content" id="modalContent" />
+      </div>
     </main>
     <script>
       // Function to open the modal
-      function openModal(imageSrc) {
-        // Get the modal element
+      function openModal(contentSrc, contentType) {
         var modal = document.getElementById("myModal");
+        var modalContent = document.getElementById("modalContent");
 
-        // Get the image element inside the modal
-        var modalImg = document.getElementById("modalImage");
+        // Check the content type
+        if (contentType === "image") {
+          var modalImg = document.getElementById("modalImage");
+          modalImg.src = contentSrc;
+          modalContent.style.display = "block";
+        } else if (contentType === "video") {
+          var modalVideo = document.getElementById("modalVideo");
+          modalVideo.src = contentSrc;
+          modalContent.style.display = "block";
 
-        // Set the source of the image in the modal
-        modalImg.src = imageSrc;
-
-        // Display the modal
-        modal.style.display = "block";
+          modalVideo.addEventListener("error", function (e) {
+            console.error("error loading the video:", e);
+});
+    modal.style.display = "block";
       }
+    }
 
       // Function to close the modal
       function closeModal() {
-        // Get the modal element
         var modal = document.getElementById("myModal");
+        var modalContent = document.getElementById("modalContent");
+        var modalVideo = document.getElementById("modalVideo");
 
-        // Hide the modal
+        // Pause the video when closing the modal
+        if (modalVideo) {
+          modalVideo.pause();
+        }
+
+        modalContent.style.display = "none";
         modal.style.display = "none";
       }
     </script>
-    <div id="myModal" class="modal" onclick="closeModal()">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <img class="modal-content" id="modalImage" />
-    </div>
+ 
     <!-- Footer with links to social media profiles -->
     <footer class="page-footer">
       <p class="white-links">Find me on</p>
